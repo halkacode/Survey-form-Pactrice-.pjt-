@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1 id="title">halkaCode Survey Form</h1>
+<p id="description">Thank you for taking the time to help to improve our platform</p>
+<form action="https://github.com/halkacode" id="survey-form">
+  <fieldset>
+    <label for="name"id="name-label">
+  Name <br><input type="text" id="name" placeholder="Enter your name" required></label>
+<label for="email"id="email-label">
+  Email <br><input type="email" id="email" required placeholder="Enter your email"></label>
+  <label for="number"id="number-label">Age <br><input type="number"id="number"min="12"max="120"placeholder="Enter your age"></label>
+  <label>What do you like from halkaCode?
+  <select name="dropdown" id="dropdown">
+    <option value="">select one</option>
+    <option value="1">learn new things</option>
+    <option value="2">my profile picture^⁠_⁠^</option>
+    <option value="3">halkaCode thought style</option>
+  </select></label>
+  </fieldset>
+  <fieldset>
+    <legend>Would you recommend halkaCode to a friend?</legend>
+    <input type="radio" name="recommend"value="halkaCode-recommend">definitely <br>
+    <input type="radio" name="recommend"value="halkaCode-recommend">definitely-not 
+  </fieldset>
+  <fieldset>
+  <label>what is your favourite feature of halkaCode?</label>
+  <select name="referrer" id="referrer">
+    <option value="">select an option</option>
+    <option value="1">projects</option>
+    <option value="2">thought idea's 
+    </option>
+    <option value="3">open source</option>
+    <option value="4">community</option>
+    <option value="5">challenges</option>
+  </select>
+  </fieldset>
+  <fieldset>
+    <legend>What would you like to see improved? (check all that apply)</legend>
+    <label for="front-end"><input type="checkbox"id="front-end" value="frontend">Front-end projects</label>
+    <label for="back-end"><input type="checkbox"id="back-end"value="backend">Back-end projects</label><br>
+    <label for="challenge"><input type="checkbox"id="challenge"value="challenge">Challenges</label><br>
+    <label for="video"><input type="checkbox"id="video"value="video">Videos</label><br>
+    <label for="open-source"><input type="checkbox"id="open-source"value="open-source-community">Open source community</label>
+  </fieldset>
+  <fieldset>
+    <label for="comments">Any comments or suggestions?
+    <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea></label>
+  </fieldset>
+  <input type="submit" value="Submit"id="submit">
+  </form>
+</body>
+
+</html>
